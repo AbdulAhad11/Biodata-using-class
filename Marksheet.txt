@@ -1,0 +1,28 @@
+class Information:
+  print("Enter your name:")
+  name = input()
+  print("Enter your age:")
+  age = input()
+  print("Enter your roll number:")
+  rollno = int(input())
+  print("Enter your Institute name:")
+  inst = input()
+  def per(self,num1,num2,num3,num4,num5):
+    percentage = ((num1+num2+num3+num4+num5)/500)*100
+    return percentage
+  def avg(self,num1,num2,num3,num4,num5):
+    average = (num1+num2+num3+num4+num5)/500
+    return average
+
+print("Enter the marks of 5 subject ")
+a = int(input("Enter the marks of Python:"  ))
+b = int(input("Enter the marks of Electronics:"  ))
+c = int(input("Enter the marks of C:"  ))
+d = int(input("Enter the marks of Arduino:"  ))
+e = int(input("Enter the marks of PI:"  ))
+p1 = Information()
+z = p1.per(a,b,c,d,e)
+y = p1.avg(a,b,c,d,e)
+print("Your Biodata")
+txt1 = "Your name is {}\nYour age is {}\nYour Roll Number is {}\nYour institute is {}\nYour average is {}\nYour percentage is {} ".format(Information.name,Information.age,Information.rollno,Information.inst,y,z)
+print(txt1)
